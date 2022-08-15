@@ -1,0 +1,31 @@
+*{
+    /* 设置为怪异盒模型 */
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5;
+}
+html,body,ul,li,p{
+    padding: 0;
+    margin: 0;
+}
+ul{
+   list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #101010;
+}
+body{
+    font: 12px/1.5 Microsoft YaHei;
+    color: #101010;
+}
+input{
+    outline: none;
+    border: 0;
+}
+.clearfix::after{
+    display: block;
+    content: '';
+    clear: both;
+}

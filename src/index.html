@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>移动webApp项目实战</title>
+    <!-- 引入初始化样式 -->
+    <link rel="stylesheet" href="./css/global.css" />
+    <!-- 引入字体图标样式 -->
+    <link rel="stylesheet" href="./font/iconfont.css" />
+    <!-- 引入首页样式 -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <style>
+      /* m-category start */
+      .m-category {
+      }
+      .category-tab {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .category-tab-list {
+        width: 17.84%;
+      }
+      .tab-tltle {
+        padding-top: 18.5px;
+        padding-bottom: 6.5px;
+        font-size: 18px;
+      }
+      .tab-con {
+        margin-bottom: 6px;
+        color: #9d9e9d;
+      }
+      .ca-active .tab-tltle {
+        color: #0eb6ff;
+      }
+      .ca-active .tab-con {
+        color: #fff;
+        background-color: #0eb6ff;
+        border-radius: 9px;
+      }
+      .m-category-con ul li {
+        height: 40px;
+        background-color: #fff;
+      }
+
+      .category-list-img {
+        display: block;
+        width: 29.1%;
+        height: 50px;
+        background-color: aquamarine;
+      }
+      .category-info {
+        width: 70.9%;
+        height: 50px;
+        background-color: bisque;
+      }
+      /* end m-category */
+    </style>
+  </head>
+  <body>
+    <!-- 头部模块 -->
+    <!-- header start -->
+    <header class="header">
+      <a href="#" class="h-position iconfont icon-weizhi"></a>
+      <a href="#" class="h-message iconfont icon-xinxi"></a>
+      <div class="h-search">
+        <input type="text" class="search" placeholder="小芒果" />
+        <span class="s-fangdajing iconfont icon-fangdajing"></span>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- 导航栏模块 -->
+    <!-- menu start -->
+    <nav class="menu">
+      <ul class="clearfix">
+        <li>
+          <a href="#">
+            <div class="menu-items-icon iconfont icon-shucai"></div>
+            <div class="menu-items-title">水果蔬菜</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="menu-items-icon iconfont icon-qinlei"></div>
+            <div class="menu-items-title">肉禽蛋品</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="menu-items-icon iconfont icon-yu"></div>
+            <div class="menu-items-title">海鲜水产</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="menu-items-icon iconfont icon-lengdongshipin"></div>
+            <div class="menu-items-title">速食冷冻</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="menu-items-icon iconfont icon-mimian"></div>
+            <div class="menu-items-title">粮油食品</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="menu-items-icon iconfont icon-dazhe"></div>
+            <div class="menu-items-title">夏日特惠</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="menu-items-icon iconfont icon-xuegao"></div>
+            <div class="menu-items-title">雪糕冰棍</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="menu-items-icon iconfont icon-lingshi"></div>
+            <div class="menu-items-title">休闲零食</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="menu-items-icon iconfont icon-yinliao"></div>
+            <div class="menu-items-title">酒水饮品</div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="menu-items-icon iconfont icon-yijia"></div>
+            <div class="menu-items-title">日用百货</div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end menu -->
+
+    <!-- 主体模块 -->
+    <!-- main start -->
+    <main class="main">
+      <!-- 超划算模块 -->
+      <!-- m-cheap start  -->
+      <div class="m-cheap">
+        <div class="m-cheap-hd clearfix">
+          <div class="m-cheap-hd-chs">超划算</div>
+          <div class="m-cheap-hd-more iconfont icon-xiangyoujiantou">更多</div>
+        </div>
+        <ul class="clearfix">
+          <li>
+            <a href="#" class="m-cheap-img">
+              <img src="./images/m-cheap-01.png" alt=""
+            /></a>
+            <div class="m-cheap-title">富士小苹果 1.5富士小</div>
+            <div class="cheap-price">
+              <span>¥ 20.9</span><i>/箱</i>
+              <a href="#" class="add iconfont icon-gouwuche"></a>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="m-cheap-img">
+              <img src="./images/m-cheap-02.png" alt=""
+            /></a>
+            <div class="m-cheap-title">麻辣小龙虾 1.5麻辣小龙虾 1.5…</div>
+            <div class="cheap-price">
+              <span>¥ 20.9</span><i>/箱</i>
+              <a href="#" class="add iconfont icon-gouwuche"></a>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="m-cheap-img">
+              <img src="./images/m-cheap-03.png" alt=""
+            /></a>
+            <div class="m-cheap-title">香甜美人蕉 1.5香甜美人蕉 1.5…</div>
+            <div class="cheap-price">
+              <span>¥ 20.9</span><i>/箱</i>
+              <a href="#" class="add iconfont icon-gouwuche"></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- end m-cheap -->
+
+      <!-- 产品推荐模块 -->
+      <!-- m-recommand start  -->
+      <div class="m-recommand clearfix">
+        <div class="m-recommand-left clearfix">
+          <div class="m-recommand-content clearfix">
+            <div class="recommand-title">吃好点</div>
+            <div class="recommand-desc">新鲜大樱桃尝鲜</div>
+            <div class="re-img">
+              <a href="#" class="recommand-img1">
+                <img src="./images/re-01.png" alt="" />
+              </a>
+            </div>
+            <div class="re-img">
+              <a href="#" class="recommand-img1">
+                <img src="./images/re-02.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="m-recommand-right">
+          <div class="m-recommand-content clearfix">
+            <div class="recommand-title">产地量贩</div>
+            <div class="recommand-desc">产地直发保质保鲜</div>
+            <div class="re-img">
+              <a href="#" class="recommand-img1">
+                <img src="./images/re-03.png" alt="" />
+              </a>
+            </div>
+            <div class="re-img">
+              <a href="#" class="recommand-img1">
+                <img src="./images/re-04.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end m-recommand -->
+
+      <!-- 产品分类模块 -->
+      <!-- m-category start -->
+      <div class="m-category">
+        <div class="category-tab">
+          <div class="category-tab-list ca-active">
+            <p class="tab-tltle">全部</p>
+            <p class="tab-con">猜你喜欢</p>
+          </div>
+          <div class="category-tab-list">
+            <p class="tab-tltle">时令</p>
+            <p class="tab-con">当季优选</p>
+          </div>
+          <div class="category-tab-list">
+            <p class="tab-tltle">进口</p>
+            <p class="tab-con">国际直采</p>
+          </div>
+          <div class="category-tab-list">
+            <p class="tab-tltle">人气</p>
+            <p class="tab-con">大家在买</p>
+          </div>
+        </div>
+        <div class="m-category-con">
+          <ul>
+            <li>
+              <a href="#" class="category-list-img">
+                <img src="" alt="" />
+              </a>
+              <div class="category-info"></div>
+            </li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- end m-category -->
+    </main>
+    <!-- end main -->
+
+    <!-- 底部导航和栏模块 -->
+    <!-- topbar start -->
+    <footer class="topbar"></footer>
+    <!-- end topbar -->
+  </body>
+</html>

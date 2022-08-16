@@ -11,54 +11,7 @@
     <link rel="stylesheet" href="./font/iconfont.css" />
     <!-- 引入首页样式 -->
     <link rel="stylesheet" href="./css/index.css" />
-    <style>
-      /* m-category start */
-      .m-category {
-      }
-      .category-tab {
-        text-align: center;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-      }
-      .category-tab-list {
-        width: 17.84%;
-      }
-      .tab-tltle {
-        padding-top: 18.5px;
-        padding-bottom: 6.5px;
-        font-size: 18px;
-      }
-      .tab-con {
-        margin-bottom: 6px;
-        color: #9d9e9d;
-      }
-      .ca-active .tab-tltle {
-        color: #0eb6ff;
-      }
-      .ca-active .tab-con {
-        color: #fff;
-        background-color: #0eb6ff;
-        border-radius: 9px;
-      }
-      .m-category-con ul li {
-        height: 40px;
-        background-color: #fff;
-      }
-
-      .category-list-img {
-        display: block;
-        width: 29.1%;
-        height: 50px;
-        background-color: aquamarine;
-      }
-      .category-info {
-        width: 70.9%;
-        height: 50px;
-        background-color: bisque;
-      }
-      /* end m-category */
-    </style>
+    <style></style>
   </head>
   <body>
     <!-- 头部模块 -->
@@ -247,15 +200,86 @@
         </div>
         <div class="m-category-con">
           <ul>
-            <li>
+            <li class="clearfix">
               <a href="#" class="category-list-img">
-                <img src="" alt="" />
+                <div class="ca-img-box">
+                  <img src="./images/category-list1.png" alt="" />
+                </div>
               </a>
-              <div class="category-info"></div>
+              <div class="category-info">
+                <p class="ca-info-title">红颜草莓 1.5kg</p>
+                <div class="ca-info-desc">
+                  <span class="tejia">特价</span>
+                  <span class="fahuo">24H发货</span>
+                </div>
+                <div class="ca-info-price">
+                  <span class="pr">¥ 20.9</span>
+                  <i>/箱</i>
+                </div>
+                <p class="ca-bynum">888 人已买过</p>
+                <a href="#" class="ca-add iconfont icon-gouwuche"></a>
+              </div>
             </li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li class="clearfix">
+              <a href="#" class="category-list-img">
+                <div class="ca-img-box">
+                  <img src="./images/category-list2.png" alt="" />
+                </div>
+              </a>
+              <div class="category-info">
+                <p class="ca-info-title">沙漠西瓜 1.5kg</p>
+                <div class="ca-info-desc">
+                  <span class="tejia">特价</span>
+                  <span class="fahuo">24H发货</span>
+                </div>
+                <div class="ca-info-price">
+                  <span class="pr">¥ 20.9</span>
+                  <i>/箱</i>
+                </div>
+                <p class="ca-bynum">888 人已买过</p>
+                <a href="#" class="ca-add iconfont icon-gouwuche"></a>
+              </div>
+            </li>
+            <li class="clearfix">
+              <a href="#" class="category-list-img">
+                <div class="ca-img-box">
+                  <img src="./images/category-list1.png" alt="" />
+                </div>
+              </a>
+              <div class="category-info">
+                <p class="ca-info-title">红颜草莓 1.5kg</p>
+                <div class="ca-info-desc">
+                  <span class="tejia">特价</span>
+                  <span class="fahuo">24H发货</span>
+                </div>
+                <div class="ca-info-price">
+                  <span class="pr">¥ 20.9</span>
+                  <i>/箱</i>
+                </div>
+                <p class="ca-bynum">888 人已买过</p>
+                <a href="#" class="ca-add iconfont icon-gouwuche"></a>
+              </div>
+            </li>
+            <li class="clearfix">
+              <a href="#" class="category-list-img">
+                <div class="ca-img-box">
+                  <img src="./images/category-list2.png" alt="" />
+                </div>
+              </a>
+              <div class="category-info">
+                <p class="ca-info-title">沙漠西瓜 1.5kg</p>
+                <div class="ca-info-desc">
+                  <span class="tejia">特价</span>
+                  <span class="fahuo">24H发货</span>
+                </div>
+                <div class="ca-info-price">
+                  <span class="pr">¥ 20.9</span>
+                  <i>/箱</i>
+                </div>
+                <p class="ca-bynum">888 人已买过</p>
+                <a href="#" class="ca-add iconfont icon-gouwuche"></a>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -265,7 +289,34 @@
 
     <!-- 底部导航和栏模块 -->
     <!-- topbar start -->
-    <footer class="topbar"></footer>
+    <footer class="topbar">
+      <ul class="clearfix">
+        <li class="topbar-list-active">
+          <a href="#">
+            <span class="topbar-list-icon iconfont icon-zhuye"></span>
+            <span class="con">主页</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="topbar-list-icon iconfont icon-fenlei"></span>
+            <span class="con">分类</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="topbar-list-icon iconfont icon-gouwuche"></span>
+            <span class="con">购物车</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="topbar-list-icon iconfont icon-gerenzhongxin"></span>
+            <span class="con">我的</span>
+          </a>
+        </li>
+      </ul>
+    </footer>
     <!-- end topbar -->
   </body>
 </html>

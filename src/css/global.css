@@ -1,4 +1,18 @@
-*{
+body,
+div,
+a,
+p,
+span,
+input,
+i,
+ul,
+li,
+img,
+header,
+nav,
+main,
+footer
+{
     /* 设置为怪异盒模型 */
     box-sizing: border-box;
 }
@@ -28,4 +42,14 @@ input{
     display: block;
     content: '';
     clear: both;
+}
+i{
+    font-style: normal;
+}
+input,
+textarea,
+button,
+a {
+  /* 表单或者a标签在手机点击时会出现边框或彩色的背景区域，意思是去除点击背景框 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }

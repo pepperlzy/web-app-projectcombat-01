@@ -3,6 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 2;
     width: 100%;
     height: 44px;
     padding: 7px 0;
@@ -35,9 +36,9 @@
     height: 100%;
     background-color: #fff;
     border-radius: 20px;
+    padding-left: 35px;
   }
   .h-search .search::placeholder {
-    padding: 35px;
     color: #9d9e9d;
     font-size: 14px;
   }
@@ -115,7 +116,7 @@
   /* end menu */
 
   .main {
-    margin: 0 11px;
+    margin: 0 11px 55px 11px;
   }
   /* 超划算模块 */
   /* .m-cheap start  */
@@ -260,6 +261,146 @@
       }
       /* end m-recommand */
 
+      /* 商品分类模块 */
+       /* m-category start */
+       .category-tab {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .category-tab-list {
+        width: 17.84%;
+      }
+      .tab-tltle {
+        padding-top: 18.5px;
+        padding-bottom: 6.5px;
+        font-size: 18px;
+      }
+      .tab-con {
+        margin-bottom: 6px;
+        color: #9d9e9d;
+      }
+      .ca-active .tab-tltle {
+        color: #0eb6ff;
+      }
+      .ca-active .tab-con {
+        color: #fff;
+        background-color: #0eb6ff;
+        border-radius: 9px;
+      }
+      .m-category-con ul li {
+        background-color: #fff;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      .category-list-img {
+        float: left;
+        display: block;
+        width: 29.1%;
+        padding: 23px 0 28px 9px;
+      }
+      .ca-img-box {
+        width: 100%;
+        padding-bottom: 86.17%;
+        position: relative;
+      }
+      .ca-img-box img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 100%;
+        object-fit: cover;
+      }
+      .category-info {
+        position: relative;
+        float: left;
+        width: 70.9%;
+        padding: 11px 14px 12px 13px;
+      }
+      .ca-info-title {
+        font-size: 14px;
+        margin-bottom: 18.5px;
+      }
+      .ca-info-desc .tejia,
+      .ca-info-desc .fahuo {
+        display: inline-block;
+        border-radius: 4px;
+      }
+      .ca-info-desc .tejia {
+        border: 1px solid #ce5f41;
+        color: #ce5f41;
+        padding-left: 3px;
+        padding-right: 6px;
+      }
+      .ca-info-desc .fahuo {
+        box-sizing: border-box;
+        color: #9d9e9d;
+        border: 1px solid #9d9e9d;
+        padding-left: 6px;
+        padding-right: 8px;
+      }
+      .ca-info-price {
+        padding: 6px 0 8px 0;
+      }
+      .ca-info-price .pr {
+        color: #ce5f41;
+      }
+      .ca-info-price i {
+        font-style: normal;
+      }
+      .category-info .ca-bynum {
+        color: #9d9e9d;
+      }
+      .ca-add {
+        position: absolute;
+        right: 14px;
+        top: 76px;
+        width: 22px;
+        height: 22px;
+        background-color: #0eb6ff;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center;
+      }
+      /* end m-category */
+/* 底部导航栏 */
+      /* topbar start  */
+      .topbar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 222;
+        width: 100%;
+        background-color: #fff;
+      }
+      .topbar ul li {
+        width: 25%;
+        float: left;
+        line-height: 1;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        text-align: center;
+      }
+      .topbar ul li a {
+        display: block;
+      }
+      .topbar ul li span {
+        display: block;
+      }
+      .topbar-list-icon {
+        font-size: 22px;
+        margin-bottom: 7px;
+      }
+      .topbar ul li.topbar-list-active a {
+        color: #0eb6ff;
+      }
+      /* end topbar */
+
+
+/* 媒体查询放在最后，以免造成样式覆盖 */
   @media screen and (min-width:500px) {
     .menu-items-icon::before{
         font-size: 45px;
@@ -273,9 +414,39 @@
     .cheap-price{
         font-size: 14px;
     }
+    .add{
+      width: 30px;
+      height: 30px;
+    }
     .add::before{
         font-size: 28px;
     }
-      
+    .category-tab-list .tab-tltle{
+      font-size: 20px;
+    }
+    .category-tab-list .tab-con{
+      font-size: 16px;
+    }
+      .ca-info-title{
+        font-size: 16px;
+      }
+      .tejia,.fahuo{
+        font-size: 14px;
+      }
+      .ca-info-price{
+        font-size: 16px;
+      }
+      .ca-bynum{
+        font-size: 16px;
+      }
+      .category-info .ca-add::before{
+        font-size: 18px;
+      }
+      .topbar-list-icon::before{
+        font-size: 18px;
+      }
+      .topbar .con{
+        font-size: 18px;
+      }
   }
   
